@@ -4,7 +4,7 @@ import {ReactComponent as Dots} from '@assets/images/svg/dots.svg';
 import {ReactComponent as Messenger} from '@assets/images/svg/messenger.svg';
 import {ReactComponent as Bell} from '@assets/images/svg/bell.svg';
 
-import avatar from '@assets/images/user.png';
+import Avatar from '../Avatar';
 
 const Account = () => {
   return (
@@ -46,14 +46,7 @@ const Account = () => {
           <Bell />
         </span>
       </a>
-      <a
-        href="/"
-        title="Аккаунт"
-        aria-label="Аккаунт"
-        className="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center border border-black/20"
-      >
-        <img src={avatar} alt="аватар" />
-      </a>
+      <Avatar />
     </div>
   );
 };
