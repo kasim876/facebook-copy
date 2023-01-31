@@ -52,21 +52,21 @@ const Post = () => {
       <div className="flex justify-between mx-4 py-1 border-t-2 border-gray-100 space-x-1">
         <button className="group relative py-2 flex items-center justify-center w-1/3 text-sm font-semibold text-gray-500">
           <span className="flex">
-            <i className="mr-2 bg-[url('src/assets/images/images2.png')] bg-[0_-201px] w-5 h-5"></i>
+            <i className="mr-2 bg-[url('../assets/images/images2.png')] bg-[0_-201px] w-5 h-5"></i>
           </span>
           <span>Нравится</span>
           <div className="absolute left-0 top-0 w-full h-full opacity-0 rounded-2xl bg-black/5 group-hover:opacity-100 transition-opacity ease-in-out"></div>
         </button>
         <button className="group relative py-2 flex items-center justify-center w-1/3 text-sm font-semibold text-gray-500">
           <span className="flex">
-            <i className="mr-2 bg-[url('src/assets/images/images2.png')] bg-[0_-162px] w-5 h-5"></i>
+            <i className="mr-2 bg-[url('../assets/images/images2.png')] bg-[0_-162px] w-5 h-5"></i>
           </span>
           <span>Комментировать</span>
           <div className="absolute left-0 top-0 w-full h-full opacity-0 rounded-2xl bg-black/5 group-hover:opacity-100 transition-opacity ease-in-out"></div>
         </button>
         <button className="group relative py-2 flex items-center justify-center w-1/3 text-sm font-semibold text-gray-500">
           <span className="flex">
-            <i className="mr-2 bg-[url('src/assets/images/images2.png')] bg-[0_-219px] w-5 h-5"></i>
+            <i className="mr-2 bg-[url('../assets/images/images2.png')] bg-[0_-219px] w-5 h-5"></i>
           </span>
           <span>Поделиться</span>
           <div className="absolute left-0 top-0 w-full h-full opacity-0 rounded-2xl bg-black/5 group-hover:opacity-100 transition-opacity ease-in-out"></div>
