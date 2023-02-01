@@ -65,7 +65,7 @@ const LeftSide = () => {
                         <i className={image}></i>
                       </div>
                       <div className="w-full">
-                        <span>{title}</span>
+                        <span className="text-sm">{title}</span>
                       </div>
                     </div>
                     <div className="absolute left-0 top-0 w-full h-full opacity-0 rounded-2xl bg-black/5 group-hover:opacity-100 transition-opacity"></div>
