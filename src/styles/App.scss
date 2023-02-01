@@ -6,3 +6,13 @@ body {
   font-family: "Helvetica", "Arial", sans-serif;
   background-color: #f0f2f5;
 }
+
+:root {
+  // values
+  --header-height: 56px;
+
+  // colors
+  --text-primary: #000;
+  --text-secondary: theme(colors.gray.500);
+  --hover-overlay: theme(colors.black/5);
+}

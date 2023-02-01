@@ -6,7 +6,7 @@ import Account from './Account';
 
 const Header = () => {
   return (
-    <header className="fixed z-50 flex items-center justify-between shadow w-full h-14 px-4 bg-white">
+    <header className="fixed top-0 z-50 flex items-center justify-between shadow w-full h-14 px-4 bg-white">
       <div className="flex items-center h-10">
         <a
           href="/"
