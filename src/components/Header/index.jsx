@@ -6,11 +6,11 @@ import Account from './Account';
 
 const Header = () => {
   return (
-    <header className="fixed top-0 z-50 flex items-center justify-between shadow w-full h-14 px-4 bg-white">
+    <header className="fixed top-0 z-50 flex items-center justify-between shadow h-[var(--header-height)] w-full px-4 bg-white">
       <div className="flex items-center h-10">
         <a
           href="/"
-          className="h-full mr-3"
+          className="h-full mr-2"
           aria-label="Facebook Home Page"
         >
           <img

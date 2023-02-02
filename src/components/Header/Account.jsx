@@ -6,46 +6,39 @@ import {ReactComponent as Bell} from '@assets/images/svg/bell.svg';
 
 import Avatar from '../Avatar';
 
+import AccountButton from './AccountButton';
+
+
+const menu = [
+  {
+    name: 'Меню',
+    icon: <Dots />,
+  },
+  {
+    name: 'Messenger',
+    icon: <Messenger />,
+  },
+  {
+    name: 'Уведомления',
+    icon: <Bell />,
+  },
+];
+
 const Account = () => {
   return (
-    <div className="flex items-center">
+    <div className="flex items-center space-x-2">
       <a
         href="/"
         aria-label="Найти друзей"
-        className="mr-2 bg-gray-200 px-3 rounded-full overflow-hidden h-9 flex items-center justify-center font-semibold text-sm hover:bg-gray-300 transition-colors duration-300 ease-in-out"
+        className="overflow-hidden rounded-full px-3 h-9 flex items-center justify-center font-semibold text-[15px] text-text-primary bg-gray-200 hover:bg-gray-300 transition-colors ease-in-out"
       >
         <span>Найти друзей</span>
       </a>
-      <a
-        href="/"
-        title="Меню"
-        aria-label="Меню"
-        className="mr-2 bg-gray-200 w-10 h-10 rounded-full overflow-hidden flex items-center justify-center hover:bg-gray-300 transition-colors duration-300 ease-in-out"
-      >
-        <span>
-          <Dots />
-        </span>
-      </a>
-      <a
-        href="/"
-        title="Messenger"
-        aria-label="Messenger"
-        className="mr-2 bg-gray-200 w-10 h-10 rounded-full overflow-hidden flex items-center justify-center hover:bg-gray-300 transition-colors duration-300 ease-in-out"
-      >
-        <span>
-          <Messenger />
-        </span>
-      </a>
-      <a
-        href="/"
-        title="Уведомления"
-        aria-label="Уведомления"
-        className="mr-2 bg-gray-200 w-10 h-10 rounded-full overflow-hidden flex items-center justify-center hover:bg-gray-300 transition-colors duration-300 ease-in-out"
-      >
-        <span>
-          <Bell />
-        </span>
-      </a>
+      {
+        menu.map(({name, icon}) => (
+          <AccountButton icon={icon} name={name} />
+        ))
+      }
       <Avatar />
     </div>
   );
